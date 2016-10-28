@@ -1,0 +1,41 @@
+comment: "preliminary GF mode"
+fileTypes: [
+  "gf"
+]
+name: "GF"
+patterns: [
+  {
+    match:"\\b(abstract|concrete|resource|interface|instance|incomplete|of|with|open|cat|fun|lincat|lin|oper|flags)\\b"
+    name: "keyword.other.gf"
+  }
+  {
+    match: "\\b(case|table|overload)\\b"
+    name: "keyword.case.gf"
+  }
+  {
+    match: "\\b(->|=>)\\b"
+    name: "keyword.operator.gf"
+  }
+  {
+    match: "\\b([A-Z][a-zA-Z0-9]*)\\b"
+    name: "variable.other.typename.gf"
+  }
+  {
+    'begin': '"'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.gf'
+    'end': '"'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.gf'
+    'name': 'string.quoted.double.gf'
+    'patterns': [
+      {
+        'match': '\\\\.'
+        'name': 'constant.character.escape.gf'
+      }
+    ]
+  }
+]
+scopeName: "source.gf"

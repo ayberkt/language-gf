@@ -1,0 +1,4 @@
+'.source.gf':
+  'editor':
+    'commentStart': '\\{--'
+    'commentEnd': '--\\}'

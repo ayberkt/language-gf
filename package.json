@@ -1,0 +1,12 @@
+{
+  "name": "language-gf",
+  "version": "0.0.1",
+  "description": "Atom language support for Grammatical Framework.",
+  "keywords": [],
+  "repository": "https://github.com/ayberkt/language-gf",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
+}
